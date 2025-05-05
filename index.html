@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A.R.T Out Loud – Healing Through Words</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="./Graphics/ART LOGO (1).png" alt="Logo" height="40" class="me-2" />
+      <span>A.R.T Out Loud</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Navigation/About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Navigation/help.html">Help</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Navigation/terms.html">Terms</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="container my-5">
+
+    <!-- Hero -->
+    <section class="row align-items-center mb-5">
+      <div class="col-md-7">
+        <h2>Who We Are</h2>
+        <p>We are a charity dedicated to bringing hope and healing through poetry.
+          Our mission is to provide a platform for voices that need to be heard using 
+          the power of verse to inspire, empower, and educate.</p>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="./Graphics/hero pic.jpg" alt="Poet performing" class="img-fluid rounded hero-img-right" />
+      </div>
+    </section>
+<hr>
+    <section class="upcoming-events py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Upcoming Events</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+    
+          <!-- Event 1 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="./Graphics/flyer.jpg" class="card-img-top" alt="Healing Through Verse Flyer">
+              <div class="card-body">
+                <h5 class="card-title">Poetry Open Mic</h5>
+                <p class="card-text">Join us for a live poetry reading and open mic dedicated to emotional well-being.</p>
+                <div class="countdown text-primary small mb-2" data-date="2025-05-10T18:00:00">Loading...</div>
+                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#event1Modal">Details</button>
+              </div>
+              <div class="card-footer text-muted">
+                June 10, 2025 · Allied Art Gallery 1213 Cornwal Av
+              </div>
+            </div>
+          </div>
+    
+          <!-- Event 2 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="./Graphics/flyer1.png" class="card-img-top" alt="Youth Poetry Workshop Flyer">
+              <div class="card-body">
+                <h5 class="card-title">A poet and a Journal</h5>
+                <p class="card-text">Empowering the youth through creativity and verse in a collaborative space.</p>
+                <div class="countdown text-primary small mb-2" data-date="2025-07-05T14:30:00">Loading...</div>
+                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#event2Modal">Details</button>
+              </div>
+              <div class="card-footer text-muted">
+                July 5, 2025 · Bellingham WA 98225
+              </div>
+            </div>
+          </div>
+    
+          <!-- Event 3 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="./Graphics/mazinze.png" class="card-img-top" alt="Mental Health Awareness Flyer">
+              <div class="card-body">
+                <h5 class="card-title">Mental Health & Poetry</h5>
+                <p class="card-text">A healing session with poets and counselors exploring mental health through art.</p>
+                <div class="countdown text-primary small mb-2" data-date="2025-08-01T16:00:00">Loading...</div>
+                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#event3Modal">Details</button>
+              </div>
+              <div class="card-footer text-muted">
+                August 1, 2025 · ILLINOIS Art House
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+    <!-- Event 1 Modal -->
+<div class="modal fade" id="event1Modal" tabindex="-1" aria-labelledby="event1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="event1ModalLabel">Poetry Open Mic</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./Graphics/flyer.jpg" class="img-fluid rounded mb-3" alt="Event 1 Flyer">
+        <p>Join us for a live poetry reading and open mic dedicated to emotional well-being. 
+           This event creates a safe space for emotional expression through words and healing.</p>
+        <p><strong>Date:</strong> June 10, 2025</p>
+        <p><strong>Time:</strong> 6:00 PM</p>
+        <p><strong>Location:</strong>Allied Art Gallery 1213 Cornwal Av</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Event 2 Modal -->
+<div class="modal fade" id="event2Modal" tabindex="-1" aria-labelledby="event2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="event2ModalLabel">A poet and a Journal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./Graphics/flyer1.png" class="img-fluid rounded mb-3" alt="Event 2 Flyer">
+        <p>A youth-centered workshop fostering creativity, confidence, and expression through poetry and guided writing.</p>
+        <p><strong>Date:</strong> July 5, 2025</p>
+        <p><strong>Time:</strong> 2:30 PM</p>
+        <p><strong>Location:</strong> Bellingham WA 98225 </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Event 3 Modal -->
+<div class="modal fade" id="event3Modal" tabindex="-1" aria-labelledby="event3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="event3ModalLabel">Mental Health & Poetry</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/images/event3-flyer.jpg" class="img-fluid rounded mb-3" alt="Event 3 Flyer">
+        <p>A special session on poetry as a form of therapy. Professionals and poets will lead discussions and performances.</p>
+        <p><strong>Date:</strong> August 1, 2025</p>
+        <p><strong>Time:</strong> 4:00 PM</p>
+        <p><strong>Location:</strong> ILLINOIS Art House</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+<hr>
+    <!-- Impact -->
+    <section class="impact mb-5">
+      <h2>Our Impact</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h4 class="card-title">Stories of Change</h4>
+              <p class="card-text">Poetry workshops have made a powerful voice for many.</p>
+              <strong>200+</strong><br />
+              <span>Poems Published</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h4 class="card-title">Poetry Workshops</h4>
+              <p class="card-text">We organize programs to foster creativity and expression.</p>
+              <strong>15</strong><br />
+              <span>Workshops Conducted</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h4 class="card-title">Lives Touched</h4>
+              <p class="card-text">Independent writers committed to sharing the gift of poetry.</p>
+              <strong>1,000</strong><br />
+              <span>Lives Touched</span>
+            </div>
+          </div>
+        </div>
+      </div>
+<hr>
+      <!-- Carousel -->
+      <div id="impactCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <img src="./Graphics/wkshop.jpg" class="d-block mx-auto img-fluid rounded" style="max-height:300px;" alt="Workshop moment">
+            <p class="mt-2">Empowering youth during community poetry sessions.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="./Graphics/grp pic.HEIC" class="d-block mx-auto img-fluid rounded" style="max-height:300px;" alt="Group reading poems">
+            <p class="mt-2">Sharing stories that inspire transformation and hope.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="./Graphics/projector wshp.jpg" class="d-block mx-auto img-fluid rounded" style="max-height:300px;" alt="Poet on stage">
+            <p class="mt-2">Live performances helping amplify unheard voices.</p>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./Graphics/naming africa.jpg" class="d-block mx-auto img-fluid rounded" style="max-height:300px;" alt="Poet on stage">
+            <p class="mt-2">Tour Sierra Leone. Poetry in Africa</p>
+          </div>
+          <div class="carousel-item">
+            <img src="./Graphics/panting ws1.HEIC" class="d-block mx-auto img-fluid rounded" style="max-height:300px;" alt="Poet on stage">
+            <p class="mt-2">Live Performances Painting Workshop.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="./Graphics/mazinze.png" class="d-block mx-auto img-fluid rounded" style="max-height:300px;" alt="Poet on stage">
+            <p class="mt-2">Magazine Featuring.</p>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#impactCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#impactCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+<hr>
+    <!-- Involve -->
+    <section class="mb-5">
+      <h2>Get Involved</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h4>Submit</h4>
+              <p>Submit your own poem. Start here.</p>
+              <a href="./Forms/submitP.html" class="btn btn-dark">Submit</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h4>Volunteer</h4>
+              <p>Support our programs by volunteering.</p>
+              <a href="./Forms/vol.html" class="btn btn-dark">Volunteer</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h4>Donate</h4>
+              <p>
+                <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" style="height: 20px; vertical-align: middle; margin-right: 6px;">
+                Help contribute, share the gift of poetry.
+              </p>
+                            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL_OR_ID" />
+                <input type="hidden" name="no_recurring" value="0" />
+                <input type="hidden" name="item_name" value="Support A.R.T Out Loud" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <button type="submit" class="btn btn-dark">Donate</button>
+              </form>
+            </div>
+          </div>
+        </div>
+              </div>
+    </section>
+<hr>
+    <!-- Featured -->
+    <section class="mb-5">
+      <h2>Featured Poems</h2>
+      <div class="ps-2">
+    
+        <div class="mb-3">
+          <p><strong>The Light Within</strong> by T. Barnes</p>
+          <a href="poems/the-light-within.pdf" class="btn btn-outline-primary btn-sm" download>Download PDF</a>
+          <audio controls style="margin-top: 10px;">
+            <source src="audio/the-light-within.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+    <hr>
+        <div class="mb-3">
+          <p><strong>A New Beginning</strong> by K. Johnson</p>
+          <a href="poems/a-new-beginning.pdf" class="btn btn-outline-primary btn-sm" download>Download PDF</a>
+          <audio controls style="margin-top: 10px;">
+            <source src="audio/a-new-beginning.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+    <hr>
+        <div class="mb-3">
+          <p><strong>Echoes of the Past</strong> by L. Mayers</p>
+          <a href="poems/echoes-of-the-past.pdf" class="btn btn-outline-primary btn-sm" download>Download PDF</a>
+          <audio controls style="margin-top: 10px;">
+            <source src="audio/echoes-of-the-past.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+    
+      </div>
+    </section>
+    <hr>
+    <!-- Partners -->
+    <section class="partners my-5">
+      <h2 class="text-center mb-4">Our Partners</h2>
+      <div class="row text-center justify-content-center">
+        <div class="col-6 col-md-3 mb-4">
+          <img src="./Graphics/ART LOGO (1).png" class="img-fluid" alt="Partner 1" style="max-height: 60px;" />
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="./Graphics/ART LOGO (1).png" class="img-fluid" alt="Partner 2" style="max-height: 60px;" />
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="./Graphics/ART LOGO (1).png" class="img-fluid" alt="Partner 3" style="max-height: 60px;" />
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="social-media py-4 bg-light text-center">
+      <div class="container">
+        <h5 class="mb-3">Follow us on social media.</h5>
+        <a href="https://facebook.com" target="_blank" class="mx-2 text-dark fs-4">
+          <i class="bi bi-facebook">facebook</i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="mx-2 text-dark fs-4">
+          <i class="bi bi-instagram">instagram</i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="mx-2 text-dark fs-4">
+          <i class="bi bi-twitter-x">twitter</i>
+        </a>
+        <a href="https://youtube.com" target="_blank" class="mx-2 text-dark fs-4">
+          <i class="bi bi-youtube">youtube</i>
+        </a>
+        <a href="mailto:contact@artoutloud.org" class="mx-2 text-dark fs-4">
+          <i class="bi bi-envelope-fill">email</i>
+        </a>
+      </div>
+    </section>
+    
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 A.R.T Out Loud. All rights reserved.
+  </footer>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

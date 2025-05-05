@@ -1,0 +1,117 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f1e8;
+  color: #333;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.impact h2,
+.partners h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.impact .card,
+.get-involved .card {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.impact .card-title,
+.get-involved .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.impact .card-text,
+.get-involved .card-text {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-inner img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  max-height: 600px;
+  animation: breathe 5s ease-in-out infinite;
+
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* New: Breathing animation for hero image */
+.hero-img-right {
+  animation: breathe 5s ease-in-out infinite;
+  border-radius: 0.5rem;
+}
+#heroIMG{
+  max-height: 200px;
+  border-radius: 0.5rem;
+}
+@keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive fix for stacked cards */
+@media (max-width: 576px) {
+  .impact .card,
+  .get-involved .card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Partner Section */
+.partners img {
+  max-height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.partners img:hover {
+  filter: none;
+  opacity: 1;
+}
+.events h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.events .card {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.events .card:hover {
+  transform: translateY(-5px);
+}
+.card-img-top{
+max-width: 100px;
+max height: 100px;
+}

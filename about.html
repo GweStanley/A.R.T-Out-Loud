@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="upcoming-events py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Upcoming Events</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+            <!-- Event 1 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="assets/images/event1-flyer.jpg" class="card-img-top" alt="Healing Through Verse Flyer">
+                <div class="card-body">
+                  <h5 class="card-title">Healing Through Verse</h5>
+                  <p class="card-text">Join us for a live poetry reading and open mic dedicated to emotional well-being.</p>
+                  <div class="countdown text-primary small mb-2" data-date="2025-06-10T18:00:00">Loading...</div>
+                  <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#event1Modal">Details</button>
+                </div>
+                <div class="card-footer text-muted">
+                  June 10, 2025 · Community Hall, Douala
+                </div>
+              </div>
+            </div>
+      
+            <!-- Event 2 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="assets/images/event2-flyer.jpg" class="card-img-top" alt="Youth Poetry Workshop Flyer">
+                <div class="card-body">
+                  <h5 class="card-title">Youth Poetry Workshop</h5>
+                  <p class="card-text">Empowering the youth through creativity and verse in a collaborative space.</p>
+                  <div class="countdown text-primary small mb-2" data-date="2025-07-05T14:30:00">Loading...</div>
+                  <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#event2Modal">Details</button>
+                </div>
+                <div class="card-footer text-muted">
+                  July 5, 2025 · Buea Cultural Center
+                </div>
+              </div>
+            </div>
+      
+            <!-- Event 3 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="assets/images/event3-flyer.jpg" class="card-img-top" alt="Mental Health Awareness Flyer">
+                <div class="card-body">
+                  <h5 class="card-title">Mental Health & Poetry</h5>
+                  <p class="card-text">A healing session with poets and counselors exploring mental health through art.</p>
+                  <div class="countdown text-primary small mb-2" data-date="2025-08-01T16:00:00">Loading...</div>
+                  <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#event3Modal">Details</button>
+                </div>
+                <div class="card-footer text-muted">
+                  August 1, 2025 · Yaoundé Art House
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      <script>
+        document.querySelectorAll('.countdown').forEach(el => {
+          const targetDate = new Date(el.getAttribute('data-date'));
+          const updateCountdown = () => {
+            const now = new Date();
+            const timeLeft = targetDate - now;
+            if (timeLeft <= 0) {
+              el.textContent = 'Event Ended';
+              el.classList.add('text-danger');
+              return;
+            }
+      
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+      
+            el.textContent = `${days}d ${hours}h ${minutes}m remaining`;
+          };
+      
+          updateCountdown();
+          setInterval(updateCountdown, 60000); // update every minute
+        });
+      </script>
+            
+</body>
+</html>
